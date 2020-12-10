@@ -59,15 +59,36 @@
   background-color: transparent;
   border-radius: 200px;
   box-shadow: none;
-  .icon-sm{
-    background: #fff;
-      color: $primary;
-      border: 1px solid #eee;
-    &:hover,
-    &.active{
+
+  }
+
+ }
+ .widget-header{
+   .icontext,
+   .input-group{
+      .icon-sm{
+          background: #fff;
+            color: $primary;
+            border: 1px solid #eee;
+            transition: all 0.3s ease-in-out;
+        &.active {
+
+          background: $primary;
+          color: #fff;
+          border: 1px solid $primary;
+
+          transition: all 0.3s ease-in-out;
+        }
+
+   }
+   &:hover {
+    .icon-sm{
+
       background: $primary;
       color: #fff;
-      border-color: $primary;
+      border: 1px solid $primary;
+
+      transition: all 0.3s ease-in-out;
     }
   }
 
@@ -92,4 +113,9 @@
 }
 .conect{
   z-index: 10000;
+}
+.drodown-connect {
+  .dropdown-toggle::before {
+    content: none;
+  }
 }

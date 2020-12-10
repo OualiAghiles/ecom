@@ -142,7 +142,7 @@ window.addEventListener('load', ()=> {
 
 })
 
-$(".icon-sm").click(function () {
+$(".p-0.search-btn").click(function () {
   $(".icon-sm").toggleClass("active");
   $(".input-search ").toggleClass("active");
   if ($(".input-search ").hasClass('active')) {
