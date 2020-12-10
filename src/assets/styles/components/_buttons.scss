@@ -1,0 +1,60 @@
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+
+    &:hover {
+        color: #fff
+    }
+}
+
+.btn-instagram {
+    background-color: #E52D27;
+    color: #fff;
+
+    &:hover {
+        color: #fff
+    }
+}
+
+.btn-youtube {
+    background-color: #C8046C;
+    color: #fff;
+
+    &:hover {
+        color: #fff
+    }
+}
+
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+
+    &:hover {
+        color: #fff
+    }
+}
+
+.btn-google {
+    background-color: #ff7575;
+    color: #fff;
+
+
+}
+
+.btn-icon {
+    width: calc(1.5em + 0.9rem + 2px);
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+    margin-right: 5px;
+}
+
+.rounded-circle {
+    border-radius: 50% !important;
+}
+
+.btn-block {
+  width: 100%;
+  display: block; 
+  border-radius: 0.37rem;
+}

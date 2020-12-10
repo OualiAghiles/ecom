@@ -1,0 +1,51 @@
+header.section-header
+  include sections\header\topnav
+  section.header-main.shadow-sm
+    .container
+      .row.align-items-center
+        .col-lg-3.col-sm-4
+          .brand-wrap.text-center
+            img.logo(src='assets/images/logo-dark.png')
+            h2.logo-text LOGO
+          // brand-wrap.//
+        .col-lg-4.col-xl-5.col-sm-8.d-none.d-sm-block
+          form.search-wrap(action='#')
+            .input-group.w-100
+              input.form-control(type='text' style='width:55%;' placeholder='Search')
+              select.form-select(name='category_name')
+                option(value='') All type
+                option(value='codex') Special
+                option(value='comments') Only best
+                option(value='content') Latest
+              .input-group-append
+                button.btn.btn-primary(type='submit')
+                  i.fa.fa-search
+          // search-wrap .end//
+          // col.//
+        .col-lg-5.col-xl-4.col-sm-12.d-none.d-lg-block
+          .widgets-wrap.float-end
+            a.widget-header.mr-3(href='#')
+              .icontext
+                .icon-wrap
+                  i.icon-sm.round.border.fa.fa-shopping-cart
+                .text-wrap.badge-tag
+                  span.small.badge.rounded-pill.bg-danger 0
+            a.widget-header.mr-3(href='#')
+              .icontext
+                .icon-wrap
+                  i.icon-sm.round.border.fa.fa-heart
+                .text-wrap.badge-tag
+                  span.small.badge.rounded-pill.bg-danger 0
+            .widget-header.dropdown
+              a(href='#' data-toggle='dropdown' data-offset='20,10' aria-expanded='false')
+                .icontext
+                  .icon-wrap
+                    i.icon-sm.round.border.fa.fa-user
+                  .text-wrap
+                    small Connexion | Inscription
+                    div
+                      | Mon compte
+                      i.fa.fa-caret-down
+              .dropdown-menu.dropdown-menu-right(x-placement='bottom-end' style='position: absolute; transform: translate3d(142px, 44px, 0px); top: 0px; left: 0px; will-change: transform;')
+                include ../elements/card-connection
+
