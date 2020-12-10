@@ -109,3 +109,46 @@ $(document).ready(function() {
 });
 // jquery end
 
+
+
+//-- scroll event for navbar
+
+window.addEventListener('load', ()=> {
+  const iconsNav = document.querySelector('.showSticky');
+  if (window.innerWidth < 992 ) {
+    iconsNav.classList.add('d-flex')
+  } else {
+    const offsetTopHeader = document.querySelector('header').getBoundingClientRect().top
+    console.log(offsetTopHeader)
+    if (offsetTopHeader < -110) {
+      iconsNav.classList.add('d-flex')
+    } else {
+      iconsNav.classList.remove('d-flex')
+    }
+     window.addEventListener('scroll', () => {
+       const scrolling = window.scrollY;
+
+       if (scrolling > 110) {
+         iconsNav.classList.add('d-flex')
+       } else {
+         iconsNav.classList.remove('d-flex')
+       }
+     })
+
+
+
+  }
+
+
+})
+
+$(".icon-sm").click(function () {
+  $(".icon-sm").toggleClass("active");
+  $(".input-search ").toggleClass("active");
+  if ($(".input-search ").hasClass('active')) {
+      $(".input-search ").focus()
+  }
+});
+
+
+

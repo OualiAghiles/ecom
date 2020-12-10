@@ -7,7 +7,7 @@ section.border-bottom.mb-4.sticky-top.menu.border-top
             svg.bi(viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg')
               path(fill-rule='evenodd' d='M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z')
 
-          .widgets-wrap.float-end.d-block.d-lg-none.pb-1
+          //.widgets-wrap.float-end.d-block.d-lg-none.pb-1
             a.widget-header.mr-3(href='#').d-sm-none
               .icontext
                 .icon-wrap
@@ -96,6 +96,33 @@ section.border-bottom.mb-4.sticky-top.menu.border-top
                 a(href='#')
                   i.fa.fa-envelope
                   |  contact@email.com
+          .widgets-wrap.float-end.showSticky
+            .widget-header.d-sm-none.d-lg-block.searchBox
+              .input-group
+                input.form-control.input-search(type='text' placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby='button-addon2')
+                button.btn.p-0(type='button')
+
+                  i.icon-sm.round.fas.fa-search
+            a.widget-header.mr-3(href='#')
+              .icontext
+                .icon-wrap
+                  i.icon-sm.round.border.fa.fa-shopping-cart
+                .text-wrap.badge-tag
+                  span.small.badge.rounded-pill.bg-danger 0
+            a.widget-header.mr-3(href='#')
+              .icontext
+                .icon-wrap
+                  i.icon-sm.round.border.fa.fa-heart
+                .text-wrap.badge-tag
+                  span.small.badge.rounded-pill.bg-danger 0
+            .widget-header.dropstart
+              a.dropdown-toggle(href='#' data-toggle='dropdown'  aria-expanded='false' data-offset="10,20")
+                .icontext
+                  .icon-wrap
+                    i.icon-sm.round.border.fa.fa-user
+              .dropdown-menu.conect.dropdown-menu-right.border-0.p-0(
+                  x-placement='bottom-end')
+                include ../elements/card-connection
           // collapse .//
           // col.//
           // row.//
