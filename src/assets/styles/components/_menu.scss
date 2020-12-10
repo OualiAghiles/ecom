@@ -66,6 +66,10 @@
  .widget-header{
    .icontext,
    .input-group{
+      button{
+
+          z-index: 100000;
+      }
       .icon-sm{
           background: #fff;
             color: $primary;
