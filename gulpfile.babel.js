@@ -13,33 +13,33 @@ import postcss from 'gulp-postcss';
 import del from 'del';
 import purgecss from 'gulp-purgecss';
 
-const atImport = require('postcss-import');
-const tailwindcss = require('tailwindcss');
+//const atImport = require('postcss-import');
+// const tailwindcss = require('tailwindcss');
 
 const server = browserSync.create();
 
-class TailwindExtractor {
-  static extract(content) {
-    return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
-  }
-}
+// class TailwindExtractor {
+//   static extract(content) {
+//     return content.match(/[A-Za-z0-9-_:\/]+/g) || [];
+//   }
+// }
 
 // paths
 const paths = {
   styles: {
-    src: 'source/assets/styles/**/*.sass',
+    src: 'src/assets/styles/**/**/*.{sass, scss, css}',
     dest: 'dist/assets/styles/'
   },
   scripts: {
-    src: 'source/assets/scripts/**/*.js',
+    src: 'src/assets/scripts/**/*.*',
     dest: 'dist/assets/scripts/'
   },
   images: {
-    src: 'source/assets/images/**/*.{jpg,jpeg,png,svg}',
-    dest: 'dist/assets/img/'
+    src: 'src/assets/images/**/*.{jpg,jpeg,png,svg}',
+    dest: 'dist/assets/images/'
   },
   views: {
-    src: 'source/template/**/*.pug',
+    src: 'src/template/**/*.pug',
     dest: 'dist'
   }
 };
@@ -58,16 +58,12 @@ export const clean = () => del(['dist']);
  * You can also declare named functions and export them as tasks
  */
 export function styles() {
-  const plugins = [
-    atImport(),
-    tailwindcss('./tailwind.config.js'),
-    require('autoprefixer')
-  ];
+
   return (
     gulp
       .src(paths.styles.src)
       .pipe(sass())
-      .pipe(postcss(plugins))
+      //.pipe(postcss(plugins))
       /* .pipe(
       purgecss({
         content: [paths.views.src],
