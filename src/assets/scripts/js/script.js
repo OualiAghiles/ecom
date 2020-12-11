@@ -16,9 +16,7 @@ $(document).ready(function() {
 
 
 	//////////////////////// Prevent closing from click inside dropdown
-    $(document).on('click', '.dropdown-menu', function (e) {
-      e.stopPropagation();
-    });
+
 
     ///////////////// fixed menu on scroll for desctop
     if ($(window).width() > 768) {
