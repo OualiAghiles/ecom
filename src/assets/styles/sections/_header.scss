@@ -5,7 +5,7 @@
 
 /* ================== header main ==================  */
 .header-main{padding-top:1rem; padding-bottom:1rem;}
-.brand-wrap, .navbar-brand { 
+.brand-wrap, .navbar-brand {
     .logo{margin-right:7px;  max-height:42px; display:inline-block; }
     .logo-text{margin:0; display:inline-block; font-size:22px; vertical-align:middle}
 }
@@ -17,10 +17,40 @@
 	.title{display:block}
 	.notify{ position:absolute; top:-3px; right:-10px}
 }
+.conect{
+  button.close{
+    position: absolute;
+    top:10px;
+    right: 10px;
+  }
+}
 
 
+@media all and (max-width: 640px) {
 
+  .navbar .dropstart .dropdown-menu.conect{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    .card{
 
+      padding-top: 20px ;
+    }
+    .shopping-cart{
+
+      padding-top: 50px ;
+      height: 100%;
+      overflow: auto;
+      .close{
+        display: inline-block;
+      }
+    }
+
+  }
+
+}
 
 /* desktop only */
 @media all and (min-width: 768px) {

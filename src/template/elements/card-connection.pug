@@ -1,20 +1,21 @@
 .card
+  button.close( type="button" class="btn-close" aria-label="Close")
   .card-body
     h4.card-title.mb-4 Sign in
     form
       .form-floating.mb-3
         input#floatingInput.form-control(type='email' placeholder='name@example.com')
         label(for='floatingInput') Email address
-      .form-floating
+      .form-floating.mb-3
         input#floatingPassword.form-control(type='password' placeholder='Password')
         label(for='floatingPassword') Password
         // input-group.//
         // form-group//
       .input-group.mb-3
-        a(href='#') Forgot password
+        a(href='#') Forgot password ?
       // form-group form-check .//
       .input-group.mb-3
-        button.btn.btn-primary.btn-block(type='submit')  Login
+        button.btn.btn-primary.btn-block.text-light(type='submit')  Login
       // form-group//
       p.text-center.my-4 or access via
       .text-center.mb-3
