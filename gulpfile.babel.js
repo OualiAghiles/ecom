@@ -27,7 +27,7 @@ const server = browserSync.create();
 // paths
 const paths = {
   styles: {
-    src: 'src/assets/styles/**/**/*.{sass, scss, css}',
+    src: 'src/assets/styles/**/**/*.scss',
     dest: 'dist/assets/styles/'
   },
   scripts: {
