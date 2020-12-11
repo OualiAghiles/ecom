@@ -4,13 +4,15 @@
       .card
         .row
           aside.col-sm-5.border-right
-            article.gallery-wrap
-              .img-big-wrap
+            article
+              include quick-slider
+
+              //.img-big-wrap
                 div
                   a(href='assets/images/items/1.jpg' data-fancybox='')
                     img(src='assets/images/items/1.jpg')
               // slider-product.//
-              .img-small-wrap
+              //.img-small-wrap
                 .item-gallery
                   img(src='assets/images/items/1.jpg')
                 .item-gallery
@@ -25,7 +27,7 @@
             article.p-5
               h3.title.mb-3 Original Version of Some product name
               .mb-3
-                var.price.h3.text-warning
+                var.price.h3.text-primary
                   span.currency US $
                   span.num 1299
                 span /per kg

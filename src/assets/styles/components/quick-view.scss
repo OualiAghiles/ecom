@@ -1,0 +1,28 @@
+@import "../variables";
+
+
+.quick-slider{
+  .carousel-control-prev-icon{
+    background: none;
+  }
+  .carousel-indicators{
+    top: 100%;
+  }
+  .carousel-indicators li {
+    width: 70px;
+    height: 70px;
+    text-indent: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    img{
+      width: 100%;
+      height: auto;
+    }
+    &.active,
+    &:hover{
+      opacity: 1;
+      border: 1px solid $primary;
+    }
+  }
+}

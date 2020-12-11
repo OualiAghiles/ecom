@@ -105,6 +105,46 @@ $(document).ready(function() {
         }); // each end.//
     }
 
+    let els = document.querySelectorAll('.quick-slider .carousel-item img')
+    els.forEach(el => {
+      //var el = $(this).getBoundingClientRect();
+      console.log(el)
+    })
+        // function carouselNormalization() {
+
+        //   var heights = [], //create empty array to store height values
+        //    smallest; //create variable to make note of the tallest slide
+
+        //     console.log(smallest)
+        //   function normalizeHeights() {
+
+        //     $('.quick-slider .carousel-item img').each(function () {
+        //        //add heights to array
+        //       heights.push($(this).outerHeight());
+
+        //     });
+        //     smallest = Math.min.apply(null, heights); //cache largest value
+        //     $('.quick-slider .carousel-item').each(function () {
+        //       $(this).css('height', smallest + 'px').css('overflow', 'hidden');
+        //     });
+        //   }
+        //   normalizeHeights();
+
+        //   $(window).on('resize orientationchange', function () {
+
+        //     smallest = 0, heights.length = 0; //reset vars
+        //     $('.quick-slider .carousel-item').each(function () {
+        //       $(this).css('height', '0'); //reset min-height
+        //     });
+
+        //     normalizeHeights(); //run it again
+
+        //   });
+
+        // }
+
+        //   carouselNormalization();
+
 
 });
 // jquery end

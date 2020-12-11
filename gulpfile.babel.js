@@ -27,19 +27,19 @@ const server = browserSync.create();
 // paths
 const paths = {
   styles: {
-    src: 'src/assets/styles/**/**/*.{sass, scss, css}',
+    src: './src/assets/styles/**/*.scss',
     dest: 'dist/assets/styles/'
   },
   scripts: {
-    src: 'src/assets/scripts/**/*.*',
+    src: './src/assets/scripts/**/*.*',
     dest: 'dist/assets/scripts/'
   },
   images: {
-    src: 'src/assets/images/**/*.{jpg,jpeg,png,svg}',
+    src: './src/assets/images/**/*.{jpg,jpeg,png,svg}',
     dest: 'dist/assets/images/'
   },
   views: {
-    src: 'src/template/**/*.pug',
+    src: './src/template/**/*.pug',
     dest: 'dist'
   }
 };

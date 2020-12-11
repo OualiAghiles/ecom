@@ -1,0 +1,27 @@
+#carouselExampleIndicators.quick-slider.carousel.slide.carousel-fade(data-ride='carousel')
+
+  .carousel-inner
+    .carousel-item.active
+      .d-block.w-100
+        img(src='assets/images/items/1.jpg' alt='...')
+    .carousel-item
+      .d-block.w-100
+        img(src='assets/images/items/2.jpg' alt='...')
+    .carousel-item
+      .d-block.w-100
+        img(src='assets/images/items/3.jpg' alt='...')
+  ol.carousel-indicators
+    li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
+      img(src='assets/images/items/1.jpg')
+    li(data-target='#carouselExampleIndicators' data-slide-to='1')
+      img(src='assets/images/items/2.jpg')
+    li(data-target='#carouselExampleIndicators' data-slide-to='2')
+      img(src='assets/images/items/3.jpg')
+  a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
+    span.carousel-control-prev-icon.bg-transparent(aria-hidden='true')
+      i.text-primary.fa.fa-chevron-left.fa-2x
+    span.visually-hidden Previous
+  a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
+    span.carousel-control-next-icon.bg-transparent(aria-hidden='true')
+      i.text-primary.fa.fa-chevron-right.fa-2x
+    span.visually-hidden Next
