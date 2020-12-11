@@ -1,0 +1,29 @@
+.shopping-cart{
+  min-width: 320px;
+  border-radius: 3px;
+  padding: 20px;
+  .shopping-cart-header {
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 15px;
+    position: relative;
+    i{
+      font-size: 26px;
+    }
+    .badge{
+      border-radius: 50%;
+      position: absolute;
+      top: -5px;
+      left: 30px;
+      font-size: 9px
+    }
+
+
+    .shopping-cart-total {
+      float: right;
+    }
+  }
+  .shopping-cart-image{
+    width: 65px;
+    height: 65px;
+  }
+}

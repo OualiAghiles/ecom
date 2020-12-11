@@ -24,12 +24,15 @@ header.section-header
           // col.//
         .col-lg-5.col-xl-4.col-sm-12.d-none.d-lg-block
           .widgets-wrap.float-end
-            a.widget-header.mr-3(href='#')
-              .icontext
-                .icon-wrap
-                  i.icon-sm.round.border.fa.fa-shopping-cart
-                .text-wrap.badge-tag
-                  span.small.badge.rounded-pill.bg-danger 0
+            .widget-header.mr-3.dropdown
+              a(href='#' data-toggle='dropdown' data-offset='20,10' aria-expanded='false')
+                .icontext
+                  .icon-wrap
+                    i.icon-sm.round.border.fa.fa-shopping-cart
+                  .text-wrap.badge-tag
+                    span.small.badge.rounded-pill.bg-danger 0
+              .dropdown-menu.dropdown-menu-right.conect.p-0.border-0(x-placement='bottom-end' style='position: absolute; transform: translate3d(142px, 44px, 0px); top: 0px; left: 0px; will-change: transform;')
+                include sections/header/cart-menu
             a.widget-header.mr-3(href='#')
               .icontext
                 .icon-wrap
@@ -46,6 +49,6 @@ header.section-header
                     div
                       | Mon compte
                       i.fa.fa-caret-down
-              .dropdown-menu.conect.dropdown-menu-right(x-placement='bottom-end' style='position: absolute; transform: translate3d(142px, 44px, 0px); top: 0px; left: 0px; will-change: transform;')
+              .dropdown-menu.conect.dropdown-menu-right.p-0.border-0(x-placement='bottom-end' style='position: absolute; transform: translate3d(142px, 44px, 0px); top: 0px; left: 0px; will-change: transform;')
                 include ../elements/card-connection
 
