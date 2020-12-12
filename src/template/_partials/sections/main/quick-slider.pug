@@ -1,27 +1,31 @@
-#carouselExampleIndicators.quick-slider.carousel.slide.carousel-fade(data-ride='carousel')
 
+.quick-slider#custCarousel.carousel.slide.carousel-fade(data-ride='carousel' align='center')
+  // slides
   .carousel-inner
     .carousel-item.active
-      .d-block.w-100
-        img(src='assets/images/items/1.jpg' alt='...')
+      a(href="assets/images/items/1.jpg" data-fancybox="images" data-fancybox="images-preview"  data-thumbs='{"autoStart":true}'>)
+        img.img-fluid(src='assets/images/items/1.jpg' alt='Hills')
     .carousel-item
-      .d-block.w-100
-        img(src='assets/images/items/2.jpg' alt='...')
+      a(href="assets/images/items/2.jpg" data-fancybox="images" data-fancybox="images-preview"  data-thumbs='{"autoStart":true}')
+        img.img-fluid(src='assets/images/items/5.jpg' alt='Hills')
     .carousel-item
-      .d-block.w-100
-        img(src='assets/images/items/3.jpg' alt='...')
-  ol.carousel-indicators
-    li.active(data-target='#carouselExampleIndicators' data-slide-to='0')
-      img(src='assets/images/items/1.jpg')
-    li(data-target='#carouselExampleIndicators' data-slide-to='1')
-      img(src='assets/images/items/2.jpg')
-    li(data-target='#carouselExampleIndicators' data-slide-to='2')
-      img(src='assets/images/items/3.jpg')
-  a.carousel-control-prev(href='#carouselExampleIndicators' role='button' data-slide='prev')
-    span.carousel-control-prev-icon.bg-transparent(aria-hidden='true')
-      i.text-primary.fa.fa-chevron-left.fa-2x
-    span.visually-hidden Previous
-  a.carousel-control-next(href='#carouselExampleIndicators' role='button' data-slide='next')
-    span.carousel-control-next-icon.bg-transparent(aria-hidden='true')
-      i.text-primary.fa.fa-chevron-right.fa-2x
-    span.visually-hidden Next
+      a(href="assets/images/items/3.jpg" data-fancybox="images" data-fancybox="images-preview"  data-thumbs='{"autoStart":true}')
+        img.img-fluid(src='assets/images/items/3.jpg' alt='Hills')
+  // Left right
+  a.carousel-control-prev(href='#custCarousel' data-slide='prev')
+    span.carousel-control-prev-icon
+      i.fa.fa-chevron-left.fa-2x.text-primary
+  a.carousel-control-next(href='#custCarousel' data-slide='next')
+    span.carousel-control-next-icon
+      i.fa.fa-chevron-right.fa-2x.text-primary
+  // Thumbnails
+  ol.carousel-indicators.list-inline
+    li.list-inline-item.active
+      a#carousel-selector-0.selected(data-slide-to='0' data-target='#custCarousel')
+        img.img-fluid(src='assets/images/items/1.jpg')
+    li.list-inline-item
+      a#carousel-selector-1(data-slide-to='1' data-target='#custCarousel')
+        img.img-fluid(src='assets/images/items/5.jpg')
+    li.list-inline-item
+      a#carousel-selector-2(data-slide-to='2' data-target='#custCarousel')
+        img.img-fluid(src='assets/images/items/3.jpg')

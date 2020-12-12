@@ -1,13 +1,11 @@
 @import "../variables";
 
-
-.quick-slider{
-  .carousel-control-prev-icon{
+.content-slider{
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon{
     background: none;
   }
-  .carousel-indicators{
-    top: 100%;
-  }
+
   .carousel-indicators li {
     width: 70px;
     height: 70px;
@@ -26,3 +24,8 @@
     }
   }
 }
+.quick-slider{
+  height: 100%;
+  .carousel-indicators{
+    bottom: 15px;
+  }}
