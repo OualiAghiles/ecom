@@ -152,5 +152,14 @@ $(".search-btn").click(function () {
   }
 });
 
+$('.quick-btn').on('click', function(){
+  $('[data-fancybox="images"]').fancybox({
+    thumbs: {
+      autoStart: true
+    }
+  })
+})
+
+
 
 
