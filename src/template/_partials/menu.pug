@@ -7,36 +7,36 @@ section.border-bottom.mb-4.sticky-top.menu.border-top
             svg.bi(viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg')
               path(fill-rule='evenodd' d='M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z')
           #main_nav.collapse.navbar-collapse
-            .category-wrap.dropdown.py-2.d-none.d-lg-block
-              a.w-100.btn.btn-primary.dropdown-toggle(href='#' aria-expanded='false' role="button" id="cats" data-toggle="dropdown" )
-                i.fa.fa-bars
-                |  Categories
-              .dropdown-menu.w-100(x-placement='bottom-start' aria-labelledby="cats")
-                a.dropdown-item(href='#') Machinery
-                a.dropdown-item(href='#') Home Appliances
-                a.dropdown-item(href='#') Transportation
-                a.dropdown-item(href='#') Apparel
-                a.dropdown-item(href='#') Home & Garden
-                a.dropdown-item(href='#') Health
+
             ul.navbar-nav
-              li.nav-item.d-block.d-lg-none
-                  a.nav-link(
-                    href='#Categories',
-                    aria-expanded="false",
-                    data-toggle="collapse",
-                    role="button") Categories
-                    i.fas.fa-caret-down.ms-1
-                  #Categories.collapse.small
-                    .card
-                      ul.list-group.list-group-flush
-                        li.nav-item.list-group-item
-                          a.nav-link(href='#') Machinery
-                        li.nav-item.list-group-item
-                          a.nav-link(href='#') Home Appliances
-                        li.nav-item.list-group-item
-                          a.nav-link(href='#') Transportation
-                        li.nav-item.list-group-item
-                          a.nav-link(href='#') Apparel
+              li.nav-item.dropdown
+                a.dropdown-toggle.nav-link(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                  | Catégories
+                  span.caret
+                ul.dropdown-menu
+                  li
+                    a(href='#') Action
+                  li
+                    a.trigger.right-caret Another Dropdown Another Dropdown
+                    ul.dropdown-menu.sub-menu
+                      li
+                        a(href='#') Level 3
+                      li
+                        a(href='#') Level 3
+                      li
+                        a.trigger.right-caret Level 3
+                        ul.dropdown-menu.sub-menu
+                          li
+                            a(href='#') Level 4
+                          li
+                            a(href='#') Level 4
+                          li
+                            a(href='#') Level 4
+                  li
+                    a(href='#') Separated link
+                  li
+                    a(href='#') One more separated link
+
               li.nav-item
                 a.nav-link(href='#')  Home
               li.nav-item
