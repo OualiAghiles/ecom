@@ -4,7 +4,7 @@
 // We'll include bootstrap variables to override bootstrap variables,
 @import "variables";
 
-@import "bootstrap-sass/bootstrap";
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 @import "responsive";
 @import "uikit";
 

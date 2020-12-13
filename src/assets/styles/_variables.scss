@@ -2,8 +2,8 @@
 // BOOTSTRAP Override Variables
 
 
-@import "bootstrap-sass/functions";
-@import "bootstrap-sass/mixins";
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/mixins";
 
 :root{
   --primary: #7d3bd3;

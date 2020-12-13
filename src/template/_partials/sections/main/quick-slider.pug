@@ -1,5 +1,5 @@
 
-.quick-slider#custCarousel.carousel.slide.carousel-fade(data-ride='carousel' align='center')
+.quick-slider#custCarousel.carousel.slide.carousel-fade(data-bs-ride='carousel' align='center')
   // slides
   .carousel-inner
     .carousel-item.active
@@ -18,20 +18,20 @@
         data-thumbs='{"autoStart":true}')
         img.img-fluid(src='assets/images/items/3.jpg' alt='Hills')
   // Left right
-  a.carousel-control-prev(href='#custCarousel' data-slide='prev')
+  a.carousel-control-prev(href='#custCarousel' data-bs-slide='prev')
     span.carousel-control-prev-icon
       i.fa.fa-chevron-left.fa-2x.text-primary
-  a.carousel-control-next(href='#custCarousel' data-slide='next')
+  a.carousel-control-next(href='#custCarousel' data-bs-slide='next')
     span.carousel-control-next-icon
       i.fa.fa-chevron-right.fa-2x.text-primary
   // Thumbnails
   ol.carousel-indicators.list-inline
     li.list-inline-item.active
-      a#carousel-selector-0.selected(data-slide-to='0' data-target='#custCarousel')
+      a#carousel-selector-0.selected(data-bs-slide-to='0' data-bs-target='#custCarousel')
         img.img-fluid(src='assets/images/items/1.jpg')
     li.list-inline-item
-      a#carousel-selector-1(data-slide-to='1' data-target='#custCarousel')
+      a#carousel-selector-1(data-bs-slide-to='1' data-bs-target='#custCarousel')
         img.img-fluid(src='assets/images/items/5.jpg')
     li.list-inline-item
-      a#carousel-selector-2(data-slide-to='2' data-target='#custCarousel')
+      a#carousel-selector-2(data-bs-slide-to='2' data-bs-target='#custCarousel')
         img.img-fluid(src='assets/images/items/3.jpg')
