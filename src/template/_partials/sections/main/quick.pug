@@ -2,35 +2,37 @@
   .modal-dialog.modal-xl.modal-dialog-centered
     .modal-content.container.p-0
       .card
+        button.btn-close.float-end(type='button' data-dismiss='modal' aria-label='Close')
+
         .row
           aside.col-sm-5.border-right.position-relative.content-slider
             article.h-100
               include quick-slider
-
-              //.img-big-wrap
-                div
-                  a(href='assets/images/items/1.jpg' data-fancybox='')
-                    img(src='assets/images/items/1.jpg')
-              // slider-product.//
-              //.img-small-wrap
-                .item-gallery
-                  img(src='assets/images/items/1.jpg')
-                .item-gallery
-                  img(src='assets/images/items/2.jpg')
-                .item-gallery
-                  img(src='assets/images/items/3.jpg')
-                .item-gallery
-                  img(src='assets/images/items/4.jpg')
-              // slider-nav.//
-              // gallery-wrap .end//
           aside.col-sm-7
             article.p-5
-              h3.title.mb-3 Original Version of Some product name
+              h3.title.b.h2.mb-3 Original Version of Some product name
+              .rating-wrap.mb-3
+                ul.rating-stars
+                  li.stars-active(style='width:80%')
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                  li
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                    i.fa.fa-star
+                .label-rating.text-success.small 132 reviews
+                .label-rating.small.text-muted 154 orders
               .mb-3
                 var.price.h3.text-primary
-                  span.currency US $
-                  span.num 1299
-                span /per kg
+                  span.num.b.me-2 1299
+                  span.currency.small Dzd
+                  
+                
               // price-detail-wrap .//
               dl
                 dt Description
@@ -46,48 +48,32 @@
                 dd.col-sm-9 Black and white
                 dt.col-sm-3 Delivery
                 dd.col-sm-9 Russia, USA, and Europe
-              .rating-wrap
-                ul.rating-stars
-                  li.stars-active(style='width:80%')
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                  li
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                .label-rating 132 reviews
-                .label-rating 154 orders
+              
               // rating-wrap.//
               hr
               .row
                 .col-sm-5
-                  dl.dlist-inline
-                    dt Quantity:
-                    dd
-                      select.form-control.form-control-sm(style='width:70px;')
-                        option  1
-                        option  2
-                        option  3
+                  span.d-block.mb-2 Quantity
+                  .input-group
+                    button.btn.btn-outline-dark#inputGroup-sizing-lg.input-group-text.decrement
+                      i.fas.fa-minus
+                    input.form-control.text-center.quantity.border-dark(type='text' value="1" min="0" max="10" aria-label='quantity')
+                    button.btn.btn-outline-dark#inputGroup-sizing-lg.input-group-text.increment
+                      i.fas.fa-plus
+
                   // item-property .//
                   // col.//
                 .col-sm-7
-                  dl.dlist-inline
-                    dt Size:
-                    dd
-                      label.form-check.form-check-inline
-                        input#inlineRadio2.form-check-input(type='radio' name='inlineRadioOptions' value='option2')
-                        span.form-check-label SM
-                      label.form-check.form-check-inline
-                        input#inlineRadio2.form-check-input(type='radio' name='inlineRadioOptions' value='option2')
-                        span.form-check-label MD
-                      label.form-check.form-check-inline
-                        input#inlineRadio2.form-check-input(type='radio' name='inlineRadioOptions' value='option2')
-                        span.form-check-label XXL
+                  span.d-block.mb-2 Select size
+                  input#sm-size.btn-check(type='radio' name='options-outlined' autocomplete='off' checked='')
+                  label.btn.btn-outline-dark(for='sm-size') SM
+                  input#md-size.btn-check(type='radio' name='options-outlined' autocomplete='off')
+                  label.btn.btn-outline-dark(for='md-size') MD
+                  input#xl-size.btn-check(type='radio' name='options-outlined' autocomplete='off')
+                  label.btn.btn-outline-dark(for='xl-size') XL
+
+
+                      
                   // item-property .//
                   // col.//
                   // row.//
