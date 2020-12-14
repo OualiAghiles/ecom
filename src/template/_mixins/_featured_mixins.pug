@@ -1,0 +1,43 @@
+mixin featuredCard(cardInfo)
+  .col-md-4
+    a.text-decoration-none(href="#")
+      figure.card.card-product
+        .img-wrap
+          img(src=cardInfo.img)
+        figcaption.info-wrap
+          h4.title= cardInfo.title
+          p.desc= cardInfo.desc
+          .rating-wrap
+            ul.rating-stars
+              li.stars-active(style='width:70%')
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+              li
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+            .label-rating.small.text-success= cardInfo.reviews
+              | reviews
+            .label-rating.small.text-muted= cardInfo.orders
+              | orders
+          // rating-wrap.//
+        .bottom-wrap
+
+          a.add-cart.float-end
+            i.fas.fa-cart-plus.fa-2x(data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top")
+          a.wish.float-end.me-2()
+            i.far.fa-heart.fa-2x.empty
+            i.fas.fa-heart.fa-2x.full(data-bs-toggle="tooltip" data-placement="top" title="add to wishlist")
+          a.quick-btn.float-end.me-2(role="button" data-bs-toggle="modal" data-bs-target="#modal" )
+            i.far.fa-eye.fa-2x(data-bs-toggle="tooltip" data-placement="top" title="quick view")
+          .price-wrap.h5
+            span.price-new= cardInfo.price
+            del.price-old.small= cardInfo.oldPrice
+          // price-wrap.//
+          // bottom-wrap.//.add-cart
+          // col //

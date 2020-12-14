@@ -1,3 +1,5 @@
+include ../../../_mixins/_featured_mixins
+
 .row
   header.clearfix.col-12
     .title-text
@@ -11,129 +13,90 @@
       a#contact-tab.nav-link(data-bs-toggle='tab' href='#contact' role='tab' aria-controls='contact' aria-selected='false') Categorie 3
   #myTabContent.tab-content
     #home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='home-tab')
-      .col-md-4
-        a.text-decoration-none(href="#")
-          figure.card.card-product
-            .img-wrap
-              img(src='assets/images/items/7.jpg')
-            figcaption.info-wrap
-              h4.title Another name of item
-              p.desc Some small description goes here
-              .rating-wrap
-                ul.rating-stars
-                  li.stars-active(style='width:70%')
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                  li
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                .label-rating.small.text-success 132 reviews
-                .label-rating.small.text-muted 154 orders
-              // rating-wrap.//
-            .bottom-wrap
-
-              a.add-cart.float-end
-                i.fas.fa-cart-plus.fa-2x(data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top")
-              a.wish.float-end.me-2()
-                i.far.fa-heart.fa-2x.empty
-                i.fas.fa-heart.fa-2x.full(data-bs-toggle="tooltip" data-placement="top" title="add to wishlist")
-              a.quick-btn.float-end.me-2(role="button" data-bs-toggle="modal" data-bs-target="#modal" )
-                i.far.fa-eye.fa-2x(data-bs-toggle="tooltip" data-placement="top" title="quick view")
-              .price-wrap.h5
-                span.price-new $1280
-                del.price-old.small $1980
-              // price-wrap.//
-              // bottom-wrap.//.add-cart
-              // col //
-
+      .row
+        +featuredCard({
+          img: 'assets/images/items/5.jpg',
+          title: 'Titre',
+          desc: 'Description',
+          reviews: '35',
+          orders: '10',
+          price: '500',
+          oldPrice: '830',
+        })
+        +featuredCard({
+          img: 'assets/images/items/3.jpg',
+          title: 'Titre2',
+          desc: 'Description',
+          reviews: '50',
+          orders: '45',
+          price: '5000',
+          oldPrice: '6300',
+        })
+        +featuredCard({
+          img: 'assets/images/items/1.jpg',
+          title: 'Titre2',
+          desc: 'Description',
+          reviews: '500',
+          orders: '230',
+          price: '3500',
+          oldPrice: '4300',
+        })
     #profile.tab-pane.fade(role='tabpanel' aria-labelledby='nav-profile-tab')
-      .col-md-4
-        a.text-decoration-none(href="#")
-          figure.card.card-product
-            .img-wrap
-              img(src='assets/images/items/5.jpg')
-            figcaption.info-wrap
-              h4.title Another name of item
-              p.desc Some small description goes here
-              .rating-wrap
-                ul.rating-stars
-                  li.stars-active(style='width:70%')
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                  li
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                .label-rating.small.text-success 132 reviews
-                .label-rating.small.text-muted 154 orders
-              // rating-wrap.//
-            .bottom-wrap
-
-              a.add-cart.float-end
-                i.fas.fa-cart-plus.fa-2x(data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top")
-              a.wish.float-end.me-2()
-                i.far.fa-heart.fa-2x.empty
-                i.fas.fa-heart.fa-2x.full(data-bs-toggle="tooltip" data-placement="top" title="add to wishlist")
-              a.quick-btn.float-end.me-2(role="button" data-bs-toggle="modal" data-bs-target="#modal" )
-                i.far.fa-eye.fa-2x(data-bs-toggle="tooltip" data-placement="top" title="quick view")
-              .price-wrap.h5
-                span.price-new $1280
-                del.price-old.small $1980
-              // price-wrap.//
-              // bottom-wrap.//.add-cart
-              // col //
-
+      .row
+        +featuredCard({
+          img: 'assets/images/items/2.jpg',
+          title: 'Titre',
+          desc: 'Description',
+          reviews: '35',
+          orders: '10',
+          price: '500',
+          oldPrice: '830',
+        })
+        +featuredCard({
+          img: 'assets/images/items/4.jpg',
+          title: 'Titre2',
+          desc: 'Description',
+          reviews: '50',
+          orders: '45',
+          price: '5000',
+          oldPrice: '6300',
+        })
+        +featuredCard({
+          img: 'assets/images/items/6.jpg',
+          title: 'Titre2',
+          desc: 'Description',
+          reviews: '500',
+          orders: '230',
+          price: '3500',
+          oldPrice: '4300',
+        })
     #contact.tab-pane.fade(role='tabpanel' aria-labelledby='nav-contact-tab')
-      .col-md-4
-        a.text-decoration-none(href="#")
-          figure.card.card-product
-            .img-wrap
-              img(src='assets/images/items/6.jpg')
-            figcaption.info-wrap
-              h4.title Another name of item
-              p.desc Some small description goes here
-              .rating-wrap
-                ul.rating-stars
-                  li.stars-active(style='width:70%')
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                  li
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                    i.fa.fa-star
-                .label-rating.small.text-success 132 reviews
-                .label-rating.small.text-muted 154 orders
-              // rating-wrap.//
-            .bottom-wrap
-
-              a.add-cart.float-end
-                i.fas.fa-cart-plus.fa-2x(data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top")
-              a.wish.float-end.me-2()
-                i.far.fa-heart.fa-2x.empty
-                i.fas.fa-heart.fa-2x.full(data-bs-toggle="tooltip" data-placement="top" title="add to wishlist")
-              a.quick-btn.float-end.me-2(role="button" data-bs-toggle="modal" data-bs-target="#modal" )
-                i.far.fa-eye.fa-2x(data-bs-toggle="tooltip" data-placement="top" title="quick view")
-              .price-wrap.h5
-                span.price-new $1280
-                del.price-old.small $1980
-              // price-wrap.//
-              // bottom-wrap.//.add-cart
-              // col //
-
+      .row
+        +featuredCard({
+          img: 'assets/images/items/7.jpg',
+          title: 'Titre',
+          desc: 'Description',
+          reviews: '35',
+          orders: '10',
+          price: '500',
+          oldPrice: '830',
+        })
+        +featuredCard({
+          img: 'assets/images/items/5.jpg',
+          title: 'Titre2',
+          desc: 'Description',
+          reviews: '50',
+          orders: '45',
+          price: '5000',
+          oldPrice: '6300',
+        })
+        +featuredCard({
+          img: 'assets/images/items/3.jpg',
+          title: 'Titre2',
+          desc: 'Description',
+          reviews: '500',
+          orders: '230',
+          price: '3500',
+          oldPrice: '4300',
+        })
 // row.//
