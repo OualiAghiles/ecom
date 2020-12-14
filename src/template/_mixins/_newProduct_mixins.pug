@@ -1,0 +1,32 @@
+mixin newProductCard(cardInfo)
+  div(class=cardInfo.sizeCol)
+    .text-decoration-none(href="#")
+      figure.card.card-product
+        a.img-wrap(href="#")
+          img(src=cardInfo.img)
+        figcaption.info-wrap
+          a.title(href='#')=cardInfo.title
+          .rating-wrap
+            ul.rating-stars
+              li.stars-active(style='width:70%')
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+              li
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+                i.fa.fa-star
+            .label-rating.small.text-success= cardInfo.reviews
+              | reviews
+            .label-rating.small.text-muted= cardInfo.orders
+              | orders
+          hr
+          .action-wrap
+            a.btn.btn-primary.btn-sm.float-end(href='#')  Order
+            .price-wrap.h5
+              span.price-new=cardInfo.price
+              del.price-old=cardInfo.oldPrice

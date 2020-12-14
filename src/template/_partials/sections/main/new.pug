@@ -1,144 +1,78 @@
+include ../../../_mixins/_newProduct_mixins
+
 .row
   header.clearfix.col-12
     .title-text
       span.h4 New products
-  .col-md-3.col-6
-    figure.card.card-product
-      .img-wrap
-        img(src='assets/images/items/3.jpg')
-        .img-wrap-overlay.d-flex
-          a.quick-btn(href='#' data-toggle="modal" data-target="#modal")
-            i.fas.fa-eye.fa-2x
-            h4.h4 Quick view
-      figcaption.info-wrap
-        a.title(href='#') Good item name
-        .action-wrap
-          a.btn.btn-primary.btn-sm.float-end(href='#')  Order
-          .price-wrap.h5
-            span.price-new $1280
-            del.price-old $1980
-          // price-wrap.//
-          // action-wrap
-          // card //
-          // col //
-  .col-md-3.col-6
-    figure.card.card-product
-      .img-wrap
-        img(src='assets/images/items/4.jpg')
-        a.btn-overlay(href='#')
-          i.fa.fa-search-plus
-          |  Quick view
-      figcaption.info-wrap
-        a.title(href='#') The name of product
-        .action-wrap
-          a.btn.btn-primary.btn-sm.float-end(href='#')  Order
-          .price-wrap.h5
-            span.price-new $280
-          // price-wrap.//
-          // action-wrap
-          // card //
-          // col //
-  .col-md-3.col-6
-    figure.card.card-product
-      .img-wrap
-        img(src='assets/images/items/5.jpg')
-        a.btn-overlay(href='#')
-          i.fa.fa-search-plus
-          |  Quick view
-      figcaption.info-wrap
-        a.title(href='#') Name of product
-        .action-wrap
-          a.btn.btn-primary.btn-sm.float-end(href='#')  Order
-          .price-wrap.h5
-            span.price-new $280
-          // price-wrap.//
-          // action-wrap
-          // card //
-          // col //
-  .col-md-3.col-6
-    figure.card.card-product
-      .img-wrap
-        img(src='assets/images/items/6.jpg')
-        a.btn-overlay(href='#')
-          i.fa.fa-search-plus
-          |  Quick view
-      figcaption.info-wrap
-        a.title(href='#') The name of product
-        .action-wrap
-          a.btn.btn-primary.btn-sm.float-end(href='#')  Order
-          .price-wrap.h5
-            span.price-new $280
-          // price-wrap.//
-          // action-wrap
-          // card //
-          // col //
-  .col-md-3.col-6
-    figure.card.card-product
-      .img-wrap
-        img(src='assets/images/items/3.jpg')
-        a.btn-overlay(href='#')
-          i.fa.fa-search-plus
-          |  Quick view
-      figcaption.info-wrap
-        a.title(href='#') Good item name
-        .action-wrap
-          a.btn.btn-primary.btn-sm.float-end(href='#')  Order
-          .price-wrap.h5
-            span.price-new $1280
-            del.price-old $1980
-          // price-wrap.//
-          // action-wrap
-          // card //
-          // col //
-  .col-md-3.col-6
-    figure.card.card-product
-      .img-wrap
-        img(src='assets/images/items/4.jpg')
-        a.btn-overlay(href='#')
-          i.fa.fa-search-plus
-          |  Quick view
-      figcaption.info-wrap
-        a.title(href='#') The name of product
-        .action-wrap
-          a.btn.btn-primary.btn-sm.float-end(href='#')  Order
-          .price-wrap.h5
-            span.price-new $280
-          // price-wrap.//
-          // action-wrap
-          // card //
-          // col //
-  .col-md-3.col-6
-    figure.card.card-product
-      .img-wrap
-        img(src='assets/images/items/5.jpg')
-        a.btn-overlay(href='#')
-          i.fa.fa-search-plus
-          |  Quick view
-      figcaption.info-wrap
-        a.title(href='#') Name of product
-        .action-wrap
-          a.btn.btn-primary.btn-sm.float-end(href='#')  Order
-          .price-wrap.h5
-            span.price-new $280
-          // price-wrap.//
-          // action-wrap
-          // card //
-          // col //
-  .col-md-3.col-6
-    figure.card.card-product
-      .img-wrap
-        img(src='assets/images/items/6.jpg')
-        a.btn-overlay(href='#')
-          i.fa.fa-search-plus
-          |  Quick view
-      figcaption.info-wrap
-        a.title(href='#') The name of product
-        .action-wrap
-          a.btn.btn-primary.btn-sm.float-end(href='#')  Order
-          .price-wrap.h5
-            span.price-new $280
-          // price-wrap.//
-          // action-wrap
-          // card //
-          // col //
-// row.//
+  +newProductCard({
+          img: 'assets/images/items/5.jpg',
+          title: 'Titre',
+          sizeCol: ' col-md-3 col-6',
+          reviews: '35',
+          orders: '10',
+          price: '500',
+          oldPrice: '830',
+        })
+  +newProductCard({
+          img: 'assets/images/items/3.jpg',
+          title: 'Titre',
+          sizeCol: ' col-md-3 col-6',
+          reviews: '35',
+          orders: '10',
+          price: '500',
+          oldPrice: '830',
+        })
+  +newProductCard({
+          img: 'assets/images/items/2.jpg',
+          title: 'Titre',
+          sizeCol: ' col-md-3 col-6',
+          reviews: '35',
+          orders: '10',
+          price: '500',
+          oldPrice: '830',
+        })
+  +newProductCard({
+          img: 'assets/images/items/6.jpg',
+          title: 'Titre',
+          sizeCol: ' col-md-3 col-6',
+          reviews: '35',
+          orders: '10',
+          price: '500',
+          oldPrice: '830',
+        })
+  +newProductCard({
+          img: 'assets/images/items/7.jpg',
+          title: 'Titre',
+          sizeCol: ' col-md-3 col-6',
+          reviews: '35',
+          orders: '10',
+          price: '500',
+          oldPrice: '830',
+        })
+  +newProductCard({
+          img: 'assets/images/items/1.jpg',
+          title: 'Titre',
+          sizeCol: ' col-md-3 col-6',
+          reviews: '35',
+          orders: '10',
+          price: '500',
+          oldPrice: '830',
+        })
+  +newProductCard({
+          img: 'assets/images/items/2.jpg',
+          title: 'Titre',
+          sizeCol: ' col-md-3 col-6',
+          reviews: '35',
+          orders: '10',
+          price: '500',
+          oldPrice: '830',
+        })
+  +newProductCard({
+          img: 'assets/images/items/5.jpg',
+          title: 'Titre',
+          sizeCol: ' col-md-3 col-6',
+          reviews: '35',
+          orders: '10',
+          price: '500',
+          oldPrice: '830',
+        })
