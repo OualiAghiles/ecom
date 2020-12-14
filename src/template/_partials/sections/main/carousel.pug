@@ -1,37 +1,38 @@
-header.clearfix.col-12
-    .title-text
-      span.h4 Featured Products
-div( class="owl-carousel owl-init slide-items" data-items="5" data-margin="20" data-dots="true" data-nav="true")
+header.clearfix
+  .title-text
+    span.h4 Owl slider - custom control
+    .btn-group.btn-group-sm.float-end.d-none.d-md-block
+      button.custom-nav-first.owl-custom-prev.btn.btn-secondary(type='button')  <
+      button.custom-nav-first.owl-custom-next.btn.btn-secondary(type='button')  >
+// ============== owl slide items 2  =============
+#slide_custom_nav.owl-carousel.owl-init.slide-items(data-custom-nav='custom-nav-first' data-items='5' data-xs="2" data-md= "3" data-margin='20' data-dots='true' data-nav='false')
   .item-slide
-    figure.card.card-sm.card-product
+    figure.card.card-product
       span.badge-new  NEW
       .img-wrap
         img(src='assets/images/items/1.jpg')
       figcaption.info-wrap.text-center
         h6.title.text-truncate
-          a(href='#') Good item name
+          a(href='#') First item name
     // card //
   .item-slide
-    figure.card.card-sm.card-product
-      span.badge-new  NEW
+    figure.card.card-product
       .img-wrap
         img(src='assets/images/items/2.jpg')
       figcaption.info-wrap.text-center
         h6.title.text-truncate
-          a(href='#') Good item name
+          a(href='#') Second item name
     // card //
   .item-slide
-    figure.card.card-sm.card-product
-      span.badge-new  NEW
+    figure.card.card-product
       .img-wrap
         img(src='assets/images/items/3.jpg')
       figcaption.info-wrap.text-center
         h6.title.text-truncate
-          a(href='#') Good item name
+          a(href='#') Third item name
     // card //
   .item-slide
-    figure.card.card-sm.card-product
-      span.badge-new  NEW
+    figure.card.card-product
       .img-wrap
         img(src='assets/images/items/4.jpg')
       figcaption.info-wrap.text-center
@@ -39,38 +40,18 @@ div( class="owl-carousel owl-init slide-items" data-items="5" data-margin="20" d
           a(href='#') Good item name
     // card //
   .item-slide
-    figure.card.card-sm.card-product
-      span.badge-new  NEW
+    figure.card.card-product
       .img-wrap
         img(src='assets/images/items/5.jpg')
       figcaption.info-wrap.text-center
         h6.title.text-truncate
-          a(href='#') Good item name
+          a(href='#') Another item name
     // card //
   .item-slide
-    figure.card.card-sm.card-product
-      span.badge-new  NEW
-      .img-wrap
-        img(src='assets/images/items/6.jpg')
-      figcaption.info-wrap.text-center
-        h6.title.text-truncate
-          a(href='#') Good item name
-    // card //
-  .item-slide
-    figure.card.card-sm.card-product
-      span.badge-new  NEW
-      .img-wrap
-        img(src='assets/images/items/7.jpg')
-      figcaption.info-wrap.text-center
-        h6.title.text-truncate
-          a(href='#') Good item name
-    // card //
-  .item-slide
-    figure.card.card-sm.card-product
-      span.badge-new  NEW
+    figure.card.card-product
       .img-wrap
         img(src='assets/images/items/3.jpg')
       figcaption.info-wrap.text-center
         h6.title.text-truncate
-          a(href='#') Good item name
+          a(href='#') Third item name
     // card //

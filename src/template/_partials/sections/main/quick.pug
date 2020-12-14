@@ -2,7 +2,7 @@
   .modal-dialog.modal-xl.modal-dialog-centered
     .modal-content.container.p-0
       .card
-        button.btn-close.float-end(type='button' data-dismiss='modal' aria-label='Close')
+        button.btn-close.float-end(type='button' data-bs-dismiss='modal' aria-label='Close')
 
         .row
           aside.col-sm-5.border-right.position-relative.content-slider
@@ -31,8 +31,8 @@
                 var.price.h3.text-primary
                   span.num.b.me-2 1299
                   span.currency.small Dzd
-                  
-                
+
+
               // price-detail-wrap .//
               dl
                 dt Description
@@ -48,7 +48,7 @@
                 dd.col-sm-9 Black and white
                 dt.col-sm-3 Delivery
                 dd.col-sm-9 Russia, USA, and Europe
-              
+
               // rating-wrap.//
               hr
               .row
@@ -73,13 +73,13 @@
                   label.btn.btn-outline-dark(for='xl-size') XL
 
 
-                      
+
                   // item-property .//
                   // col.//
                   // row.//
               hr
-              a.btn.btn-primary.me-1(href='#')  Buy now
-              a.btn.btn-outline-primary(href='#')
+              button.btn.btn-primary.me-1(role="button")  Buy now
+              button.btn.btn-outline-primary.add-cart(role="button")
                 i.fas.fa-shopping-cart
                 |  Add to cart
             // card-body.//

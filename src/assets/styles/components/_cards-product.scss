@@ -39,7 +39,8 @@
     .action-wrap{padding-top:4px; margin-top:4px}
     .bottom-wrap{padding:15px; border-top:1px solid #eee;
 
-      a.wish{
+      .wish{
+        cursor: pointer;
         .empty{
           display: inline-block;
         }

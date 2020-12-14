@@ -65,6 +65,8 @@ $(document).ready(function() {
 
             var myOwl = $(this);
             var data_items = myOwl.data('items');
+            var data_xs = myOwl.data('xs');
+            var data_md = myOwl.data('md');
             var data_nav = myOwl.data('nav');
             var data_dots = myOwl.data('dots');
             var data_margin = myOwl.data('margin');
@@ -76,16 +78,17 @@ $(document).ready(function() {
                 margin: data_margin,
                 nav: eval(data_nav),
                 dots: eval(data_dots),
-                autoplay: false,
+                autoplay: true,
+                autoplayTimeout: 1800,
                 items: data_items,
                 navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
                  //items: 4,
                 responsive: {
                     0: {
-                        items: 1
+                        items: data_xs
                     },
                     600: {
-                        items: data_items
+                        items: data_md
                     },
                     1000: {
                         items: data_items
@@ -201,11 +204,7 @@ var inputNumber = function(el) {
 }
 
 
-function see() {
 
-    $('.toast').toast('show')
-
-}
 // document.querySelectorAll('.wish').forEach((el) => {
 //   el.addEventListener('click', () => {
 //     document.querySelector('.toast').show()

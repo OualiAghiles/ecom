@@ -1,18 +1,25 @@
 let tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
 let tooltipList = tooltipTriggerList.map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl))
 
-const opt = {
-  animation: true,
-  autohide: true // 2s
-}
+const notyf = new Notyf({
+ position :{
+   x: 'right',
+  y: 'top'}
+});
 
+const wish = document.querySelectorAll('.wish')
+const addCart = document.querySelectorAll('.add-cart')
 
-let toastElList = [].slice.call(document.querySelectorAll('.toast'))
-let toastList = toastElList.map(function (toastEl) {
-  return new bootstrap.Toast(toastEl, opt)
+wish.forEach(el => {
+  el.addEventListener('click', ()=> {
+    notyf.success("l'article a été ajouter a votre wishlist");
+  })
 })
 
 
 
-
-
+addCart.forEach(el => {
+  el.addEventListener('click', () => {
+    notyf.success("l'article a été ajouter a votre panier");
+  })
+})
